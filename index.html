@@ -1,0 +1,59 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Расписание школьного звонка</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+  <style rel="stylesheet">
+    table {
+      border-collapse: collapse;
+    }
+
+    table tr td {
+      border: 1px solid #000;
+      padding: 2px 10px;
+    }
+
+    #time {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+    .container {
+      display: flex;
+    }
+    .left {
+
+    }
+    .right {
+      padding: 0 30px;
+    }
+    #alert {
+      font-size: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Расписание звонков</h2>
+  <div class="container">
+    <div class="left">
+      <div id="mode"></div>
+      <div id="time"></div>
+      <audio src="./bell.mp3" id="bell" controls="controls" preload="auto"></audio>
+      <div id="alert"></div>
+    </div>
+    <div class="right">
+
+      <div id="table"></div>
+    </div>
+  </div>
+
+  
+  <script src="./jquery-3.3.1.min.js"></script>
+  <script src="./modes.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
